@@ -20,5 +20,6 @@ To use this containerized database, simply clone the repo. Then, replace the sch
 docker compose up --build -d
 ```
 
-The images will pull, the database will be estabilished with the provided script, and you may access it through [[http://localhost:8080]].
+The images will pull, the database will be estabilished with the provided script, and you may access it through [http://localhost:8080](http://localhost:8080).
+
 
