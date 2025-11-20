@@ -3,7 +3,7 @@
 # Retrieved 2025-11-18, License - CC BY-SA 4.0
 
 # Wait to be sure that SQL Server came up
-sleep 90s
+sleep 10s
 
 # Run the setup script to create the DB and the schema in the DB
 # Note: make sure that your password matches what is in the Dockerfile
