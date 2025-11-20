@@ -2,22 +2,22 @@
 -- Posted by Linda Lawton - DaImTo, modified by community. See post 'Timeline' for change history
 -- Retrieved 2025-11-18, License - CC BY-SA 4.0
 
-CREATE DATABASE [product-db]
+
+-- Create a test database
+CREATE DATABASE TestDB;
 GO
 
-USE [product-db];
+-- Use the database
+USE TestDB;
 GO
 
-CREATE TABLE product (
-    Id INT NOT NULL IDENTITY,
-    Name TEXT NOT NULL,
-    Description TEXT NOT NULL,
-    PRIMARY KEY (Id)
+-- Create a sample table
+CREATE TABLE Users (
+    Id INT PRIMARY KEY,
+    Name NVARCHAR(50) NOT NULL
 );
 GO
 
-INSERT INTO [product] (Name, Description)
-VALUES 
-('T-Shirt Blue', 'Its blue'),
-('T-Shirt Black', 'Its black'); 
+-- Insert a test row
+INSERT INTO Users (Id, Name) VALUES (1, 'Alice');
 GO
